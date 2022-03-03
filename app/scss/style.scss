@@ -4,3 +4,67 @@
 @import "libs";
 @import "global";
 @import "media";
+
+// BASE
+.btn {
+  background-color: $blue;
+  border-radius: 30px;
+  color: $white;
+  border: 2px solid $blue;
+  transition: background-color $animation, color $animation;
+  &:hover {
+    background-color: $white;
+    color: $blue;
+    transition: background-color $animation, color $animation;
+  }
+}
+
+// HEADER
+.header {
+  &__inner {
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__link {
+    padding: 16px 24px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+// MENU
+.menu {
+  margin-left: auto;
+  margin-right: 67px;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__list-item {
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+  &__list-link {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 3px;
+    position: relative;
+    transition: background-color $animation;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 3px;
+      opacity: 0;
+      background-color: $blue;
+      transition: opacity $animation;
+    }
+    &:hover::after {
+      opacity: 1;
+      transition: opacity $animation;
+    }
+  }
+}

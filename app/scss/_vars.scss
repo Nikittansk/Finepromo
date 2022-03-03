@@ -1,0 +1,35 @@
+// Общие семантические цвета
+$blue: #3689ff;
+$blue-dark: #0066ff;
+$blue-gradient: linear-gradient(125.29deg, #3690ff 12.38%, #006fb6 83.78%);
+$white: #fff;
+$white-gradient: linear-gradient(
+  125.29deg,
+  #ffffff 12.38%,
+  #edf8ff 44.96%,
+  #d6e7ff 83.78%
+);
+$gray: #d4d4d4;
+$rainbow: linear-gradient(
+  90deg,
+  #85d0f4 0%,
+  #76c5c2 32.08%,
+  #fff495 60.21%,
+  #ed7188 100%
+);
+$black: #5e5e5e;
+$yellow: #fff495;
+$light-blue: #85d0f4;
+$red: #ed7188;
+$light-gradient: linear-gradient(
+  303.63deg,
+  #bcbeff 13.94%,
+  rgba(212, 212, 212, 0) 52.79%
+);
+
+// Анимация
+$animation-speed: 0.4s;
+$animation-func: ease;
+$animation: $animation-speed $animation-func;
+
+// Стили
