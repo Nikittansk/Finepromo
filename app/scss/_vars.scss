@@ -27,9 +27,16 @@ $light-gradient: linear-gradient(
   rgba(212, 212, 212, 0) 52.79%
 );
 
+// Тень
+$shadow: 6px 6px 20px 2px rgba(180, 180, 180, 0.25);
+
 // Анимация
 $animation-speed: 0.4s;
 $animation-func: ease;
 $animation: $animation-speed $animation-func;
 
 // Стили
+%list-link {
+  font-size: 14px;
+  line-height: 18px;
+}
