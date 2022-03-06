@@ -3,6 +3,8 @@
 @import "reset";
 @import "libs";
 @import "global";
+@import "header";
+@import "main";
 @import "media";
 
 // BASE
@@ -23,153 +25,13 @@
   font-weight: 700;
   color: $blue;
 }
-
-/*----------------------------- HEADER -----------------------------*/
-.header {
-  margin-bottom: 95px;
-  &__inner {
-    padding: 17px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__link {
-    padding: 16px 24px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-// MENU
-.menu {
-  margin-left: auto;
-  margin-right: 67px;
-  &__list {
-    display: flex;
-    align-items: center;
-  }
-  &__list-item {
-    position: relative;
-    &:not(:first-child) {
-      margin-left: 40px;
-    }
-    &:hover .dropdown__list {
-      display: block;
-    }
-    &:hover .menu__list-link {
-      &::after {
-        opacity: 1;
-      }
-    }
-  }
-  &__list-link {
-    @extend %list-link;
-    padding-bottom: 3px;
-    position: relative;
-    transition: background-color $animation;
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: -10px;
-      left: -10px;
-      right: -10px;
-      bottom: -10px;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 3px;
-      left: 0;
-      bottom: 0;
-      z-index: 2;
-      opacity: 0;
-      background-color: $blue;
-      transition: opacity $animation;
-    }
-    &:hover::after {
-      opacity: 1;
-      transition: opacity $animation;
-    }
-  }
-}
-.dropdown {
-  &__list {
-    display: none;
-    min-width: 160px;
-    position: absolute;
-    left: 0;
-    top: 20px;
-    padding-top: 20px;
-  }
-  &__list-item {
+.gap {
+  width: 100%;
+  height: 60px;
+  &__white {
     background-color: $white;
   }
-  &__list-link {
-    @extend %list-link;
-  }
-}
-
-/*----------------------------- MAIN -----------------------------*/
-//HEAD
-.head {
-  margin-bottom: 135px;
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__content {
-    max-width: 555px;
-  }
-  &__title {
-    font-size: 54px;
-    line-height: 62px;
-    margin-bottom: 40px;
-  }
-  &__text {
-    margin-bottom: 42px;
-  }
-  &__link {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 700;
-    padding: 16px 24px;
-  }
-}
-// BENEFITS
-.benefits {
-  margin-bottom: 90px;
-  &__title {
-    line-height: 55px;
-    max-width: 500px;
-    margin-bottom: 55px;
-  }
-  &__inner {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 387px;
-    background: #ffffff;
-    box-shadow: $shadow;
-    border-radius: 30px;
-    padding: 59px 0;
-    margin: 10px 20px 10px 0px;
-  }
-  &__item-number {
-    font-size: 72px;
-    line-height: 93px;
-    font-weight: 700;
-    color: $blue;
-    margin-right: 20px;
-    padding-left: 33px;
-  }
-  &__item-text {
-    max-width: 235px;
-    padding-right: 17px;
+  &__blue {
+    background-color: $blue;
   }
 }
