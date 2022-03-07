@@ -1,7 +1,6 @@
 @import "slick";
 .slick {
   &-list {
-    max-width: 920px;
     margin: 0 auto;
   }
   &-arrow {
@@ -18,17 +17,57 @@
     transition: background-image $animation;
   }
   &-prev {
-    background-image: url(../images/sliderCases/arrowPrev.svg);
     left: 0;
-    &:hover {
-      background-image: url(../images/sliderCases/arrowPrevHover.svg);
-    }
   }
   &-next {
-    background-image: url(../images/sliderCases/arrowNext.svg);
     right: 0;
-    &:hover {
-      background-image: url(../images/sliderCases/arrowNextHover.svg);
+  }
+}
+
+// CASES
+.cases {
+  .slick {
+    &-list {
+      max-width: 920px;
+    }
+    &-prev {
+      background-image: url(../images/slider/arrowPrevWhite.svg);
+      &:hover {
+        background-image: url(../images/slider/arrowPrevWhiteHover.svg);
+      }
+    }
+    &-next {
+      background-image: url(../images/slider/arrowNextWhite.svg);
+      &:hover {
+        background-image: url(../images/slider/arrowNextWhiteHover.svg);
+      }
+    }
+  }
+}
+
+// TEAM
+.team {
+  .slick {
+    &-list {
+      max-width: 895px;
+    }
+    &-arrow {
+      top: 45%;
+    }
+    &-slide {
+      padding-bottom: 22px;
+    }
+    &-prev {
+      background-image: url(../images/slider/arrowPrevBlue.svg);
+      &:hover {
+        background-image: url(../images/slider/arrowPrevBlueHover.svg);
+      }
+    }
+    &-next {
+      background-image: url(../images/slider/arrowNextBlue.svg);
+      &:hover {
+        background-image: url(../images/slider/arrowNextBlueHover.svg);
+      }
     }
   }
 }

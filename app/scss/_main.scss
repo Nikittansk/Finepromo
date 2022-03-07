@@ -107,3 +107,192 @@
     padding: 0 0 43px 30px;
   }
 }
+
+// PROFIT
+.profit {
+  background-color: $blue;
+  &__title {
+    color: $white !important;
+    line-height: 58px;
+    max-width: 660px;
+    margin-bottom: 58px;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-bottom: 33px;
+  }
+  &__item {
+    width: 245px;
+    position: relative;
+    margin-right: 3px;
+    &:last-child {
+      width: 210px;
+      margin-right: 0;
+    }
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 8px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../images/icons/lineArrow.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__item-circle {
+    width: 210px;
+    height: 210px;
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: 50%;
+    display: flex;
+  }
+  &__item-circle--text {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    align-self: center;
+    padding: 0 12px;
+  }
+}
+
+// SERTIFICATES
+.sertificates {
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 17px 0;
+  }
+  &__title {
+    max-width: 315px;
+    line-height: 55px;
+    margin-right: 80px;
+  }
+  &__content {
+    width: 660px;
+    height: 373px;
+    position: relative;
+  }
+  &__content-item {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    &.google {
+      left: 0;
+      top: 17px;
+    }
+    &.yandex {
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+    &.myTarget {
+      right: 0;
+      top: 0;
+    }
+    &.google .sertificates__content-item--title {
+      margin-bottom: 32px;
+    }
+    &.yandex .sertificates__content-item--title {
+      margin-bottom: 20px;
+    }
+    &.myTarget .sertificates__content-item--title {
+      margin-bottom: 30px;
+    }
+  }
+  &__content-item--title {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    max-width: 200px;
+    text-align: center;
+  }
+}
+
+// TEAM
+.team {
+  &__slider-item {
+    max-width: 285px;
+    height: 330px;
+    background-color: $white;
+    border-radius: 30px;
+    box-shadow: $shadow;
+    margin: 0 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__slider-item--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 72px;
+  }
+  &__slider-item--img {
+    padding: 20px 65px 0 89px;
+    margin-bottom: 25px;
+  }
+  &__slider-item--title {
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+  &__slider-item--text {
+    max-width: 230px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
+// PROJECTS
+.projects {
+  background-color: $blue;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 100%;
+    max-width: 367px;
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: 30px;
+    padding: 17px 0 16px 20px;
+    margin: 10px;
+  }
+  &__item-content {
+    padding-left: 25px;
+    position: relative;
+    &::before {
+      content: "";
+      height: 50px;
+      border: 2.5px solid $blue-dark;
+      background-color: $blue-dark;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 40px;
+    }
+  }
+  &__item-title {
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  &__item-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
